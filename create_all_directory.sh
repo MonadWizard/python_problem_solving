@@ -1,5 +1,6 @@
 while read -r d; do
-  mkdir -p "$d"/{concept,code}
+  : > "$d/concept/.gitkeep"
+  : > "$d/code/.gitkeep"
 done <<'EOF'
 Step1_Learn the basics
 Step2_Learn Important Sorting Techniques
